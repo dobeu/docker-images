@@ -57,7 +57,7 @@ jobs:
             type=match,pattern=crr-(.*),group=1
 
       - name: build-push
-        uses: docker/build-push-action@e551b19e49efd4e98792db7592c17c09b89db8d8
+        uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
         with:
           context: ./concourse-rsync-resource
           builder: ${{ steps.buildx.outputs.name }}
